@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    >
+
+
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ID : "
+            />
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:id="@+id/tv_id_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            />
+
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--Name-->
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name : "
+            />
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:id="@+id/tv_name_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            />
+
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--Address-->
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Address : "
+            />
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:id="@+id/tv_address_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            />
+
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--Age-->
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age : "
+            />
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:id="@+id/tv_age_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            />
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--gender-->
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender : "
+            />
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:id="@+id/tv_gender_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            />
+
+
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--Phone-->
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:text="Phone : "
+            />
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:id="@+id/tv_phone_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            />
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--Mail-->
+    <com.geek.recycleview.ui.component.TableRowCustom>
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress|textEmailSubject|textWebEmailAddress"
+            android:text="Email : "
+            />
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:id="@+id/tv_email_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            />
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <com.geek.recycleview.ui.component.TableRowCustom android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_cancel_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Cancel"
+            android:textSize="24sp"
+            />
+
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+
+</TableLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    >
+
+    <!--Name-->
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name : "
+            />
+
+        <com.geek.recycleview.ui.component.EditTextCustom
+            android:id="@+id/edt_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Ex : Adam"
+            android:inputType="textCapSentences"
+            />
+
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--Address-->
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Address : "
+            />
+
+        <com.geek.recycleview.ui.component.EditTextCustom
+            android:id="@+id/edt_address"
+            android:layout_width="0dp"
+            android:hint="US, Virginia"
+            android:layout_height="wrap_content"
+            />
+
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--Age-->
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age : "
+            />
+
+        <Spinner
+            android:id="@+id/spinner_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@drawable/shape"
+            />
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--gender-->
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender : "
+            />
+
+        <RadioGroup
+            android:id="@+id/radio_btn_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_btn_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_btn_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FeMale"
+                />
+
+        </RadioGroup>
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--Phone-->
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:text="Phone : "
+            />
+
+        <com.geek.recycleview.ui.component.EditTextCustom
+            android:id="@+id/edt_phone"
+            android:inputType="phone"
+            android:hint="123456789"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--Mail-->
+    <com.geek.recycleview.ui.component.TableRowCustom>
+
+        <com.geek.recycleview.ui.component.TextViewCustom
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress|textEmailSubject|textWebEmailAddress"
+            android:text="Email : "
+            />
+
+        <com.geek.recycleview.ui.component.EditTextCustom
+            android:id="@+id/edt_mail"
+            android:layout_width="0dp"
+            android:inputType="textEmailAddress"
+            android:hint="demo@gmail.com"
+            android:layout_height="wrap_content"
+            />
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+    <!--button-->
+    <com.geek.recycleview.ui.component.TableRowCustom
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="20dp"
+        >
+
+        <Button
+            android:id="@+id/btn_add_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Save"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/btn_cancel_save_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Cancel"
+            android:textSize="24sp"
+            />
+    </com.geek.recycleview.ui.component.TableRowCustom>
+
+
+</TableLayout>
